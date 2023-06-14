@@ -1,4 +1,4 @@
-## Day 1 | June 13, 2023
+# Day 1 | June 13, 2023
  
 ### Today's Progress :
 - Read Program Structure on JS Eloquent
