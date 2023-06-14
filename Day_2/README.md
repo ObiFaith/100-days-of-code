@@ -7,7 +7,8 @@
 ### Thought :
 - It was a bit difficult to display different values on the same line in JS (console.log() does not allow it) 
 - Solving those exercises was fun and took me a while to solve with JS (Still on the point made above)
-- I was happy when I finally got the last task working as expected (Was the most challenging among others)
+- Very happy when I finally got the last task working as expected (Found it to be the most challenging among others)
+- Improve the way I code
   
 > Quote of the Day: Scheduling a time in order to do something is the first step to fight against procrastination
 >
