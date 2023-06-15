@@ -4,6 +4,8 @@
 - Complete my readings on Program structure
 - Solved 3 exercises on the topic
 
+![Source codes](./Day_2.png)
+
 ### Thought :
 - It was a bit difficult to display different values on the same line in JS (console.log() does not allow it) 
 - Solving those exercises was fun and took me a while to solve with JS (Still on the point made above)
