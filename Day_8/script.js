@@ -3,7 +3,7 @@ const hiddenBtn = document.querySelector('.hidden-btn');
 revealBtn.addEventListener('click', () => {    
     hiddenBtn.classList.toggle('d-block');
     if (hiddenBtn.classList.contains('d-block'))
-        revealBtn.innerHTML = "Hide...";
+        revealBtn.innerText = "Hide...";
     else
-        revealBtn.innerHTML = "Reveal More...";
+        revealBtn.innerText = "Reveal More...";
 });
