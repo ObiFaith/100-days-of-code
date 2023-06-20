@@ -9,15 +9,3 @@
 /*
 1. FDF are part of the top-to-bottom flow of control while FDC are not (without worrying about having to define all functions before they are used)
 */
-
-/*
-let square = function (num) {return num};
-
-let sq = square;
-console.log(sq(4));
-*/
-
-let square = (num) => {return (n) => n * num};
-let sq = square;
-
-console.log(sq(3)(4));
