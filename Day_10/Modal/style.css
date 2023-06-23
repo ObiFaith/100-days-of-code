@@ -1,0 +1,27 @@
+*::before, *, *::after{box-sizing: border-box;}
+*{padding: 0; margin: 0; outline: none;}
+
+body{
+    background: url('./abstract-music-rock-bw.jpeg') no-repeat bottom center / cover;    
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+}
+.btn{
+    border: none;
+    background-color: #fff;
+    color: #000;
+    padding: .7em 1em;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 4em;
+    transition: .5s;
+}
+
+.btn:hover{
+    background-color: #aaa;
+    border: 2px solid #fff;
+}
+
+.btn ~ div{padding: .5em 1em; z-index: 1; display: none;}
+span{font-weight: 800; font-size: 35px; color: rgb(160, 0, 0); margin-left: 2em;}
