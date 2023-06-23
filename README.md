@@ -12,6 +12,12 @@
   - [Day 7 | June 19, 2023](#day-7--june-19-2023)
     - [Links](#links)
   - [Day 8 | June 20, 2023](#day-8--june-20-2023)
+  - [Day 9 | June 21, 2023](#day-9--june-21-2023)
+    - [Links](#links-1)
+  - [Day 10 | June 22, 2023](#day-10--june-22-2023)
+    - [Links](#links-2)
+  - [Day 11 | June 23, 2023](#day-11--june-23-2023)
+    - [Links](#links-3)
   
 
 ## Day 1 | June 13, 2023
@@ -104,18 +110,106 @@ toggleMenu.addEventListener('click', function (){
 - Practice on HTML DOM
 - Added features to the project content I used for learning
 
-```javascript
-const revealBtn = document.querySelector('.reveal-btn');
-const hiddenBtn = document.querySelector('.hidden-btn');
-revealBtn.addEventListener('click', () => {    
-    hiddenBtn.classList.toggle('d-block');
-    if (hiddenBtn.classList.contains('d-block'))
-        revealBtn.innerHTML = "Hide...";
-    else
-        revealBtn.innerHTML = "Reveal More...";
-});
-```
+![HTML DOM](./Day_8/day_8.png)
 
 > Quote of the Day : **_There will always be distractions but find a way to stick to the learning process_**
 
 [To get more information on the project with useful resources used](https://github.com/ObiFaith/Landing_Page--Genesys)
+
+## Day 9 | June 21, 2023
+- Practice on HTML DOM
+- Project on Quote Generator
+
+![HTML DOM](./Day_9/day_9.png)
+
+> Quote of the Day : **_Practice add depth to knowledge_**
+
+### Links
+
+[HTML DOM on freeCodeCamp](https://youtu.be/5fb2aPlgoys)
+
+[To get more info & source code](./Day_9/)
+
+## Day 10 | June 22, 2023
+- Practice on HTML DOM
+- Project on Modal
+- Project on Accordion
+
+![HTML DOM](./Day_10/day_10.png)
+
+> Quote of the Day : **_Practice add depth to knowledge_**
+
+### Links
+
+[HTML DOM on freeCodeCamp](https://youtu.be/5fb2aPlgoys)
+
+[To get more info & source code](./Day_10/)
+
+## Day 11 | June 23, 2023
+- Practice on HTML DOM
+- Project on Stop Watch
+- Project on Todo List
+
+```javascript
+const container = document.querySelector('.container');
+const addTask = document.querySelector('.addTask');
+const input = document.querySelector('input');
+
+let error = document.querySelector('p');
+
+addTask.addEventListener('click', ()=>{
+    if (input.value.length >= 1)
+    {
+        error.style.display = 'none';
+        const newTask = document.createElement('div');
+        newTask.classList.add('addedTask');
+
+        const taskTitle = document.createElement('p');    
+        taskTitle.innerText = input.value;
+        newTask.appendChild(taskTitle);
+        
+        const buttons = document.createElement('div');
+        buttons.classList.add('btns');
+
+        const btnCheck = document.createElement('div');
+        btnCheck.innerHTML = `
+            <svg class="btn-check" xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M20 7L10 17l-5-5"/>
+            </svg>
+        `;
+
+        const btnDelete = document.createElement('div');
+        btnDelete.innerHTML = `
+            <div class = "btn-del">&times;</div>
+        `; 
+
+        buttons.appendChild(btnCheck);
+        buttons.appendChild(btnDelete);
+
+        btnCheck.addEventListener('click', (e)=>{
+            let taskTitle = e.target.parentElement.parentElement.previousElementSibling;
+            taskTitle.style.textDecoration = "line-through";
+        })
+
+        newTask.appendChild(buttons);
+        container.appendChild(newTask);
+
+        btnDelete.addEventListener('click', (e)=>{
+            let newTask = e.target.parentElement.parentElement.parentElement;
+            container.removeChild(newTask);
+        })
+
+        input.value = null;
+    }
+    else                             
+        error.style.display = 'block';    
+})
+```
+
+> Quote of the Day : **_Practice add depth to knowledge_**
+
+### Links
+
+[HTML DOM on freeCodeCamp](https://youtu.be/5fb2aPlgoys)
+
+[To get more info & source code](./Day_10/)

@@ -1,0 +1,35 @@
+*::before, *, *::after{box-sizing: border-box;}
+*{margin: 0; padding: 0; border: none; outline: none;}
+
+body{
+    background: url("./pexels-janko-ferlic-590493.jpg") no-repeat top center / cover;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    font: 20px sans-serif;
+    text-align: center;
+}
+
+.title,
+.content,
+.container{
+    margin-inline: auto;
+}
+
+.title{max-width: 50%;}
+.content{max-width: 70%}
+
+h2{color: rgb(148, 52, 52); text-transform: uppercase; font-weight: 300; font-size: 25px; padding-block: 1em;}
+
+.title,
+.btn{padding: .7em;}
+
+p{text-align: center;}
+
+.title,
+.btn,
+.content{ border-radius: 5px; }
+
+.title,
+.btn{background-color: #000; color: #fff; border: 2px solid #fff;}
+.content{background-color: #fff; color: #000; margin-top: 2em; padding: 3em 1em 1.5em}
