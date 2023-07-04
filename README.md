@@ -18,6 +18,7 @@
     - [Links](#links-2)
   - [Day 11 | June 23, 2023](#day-11--june-23-2023)
     - [Links](#links-3)
+  - [Day 12 | July 4, 2023](#day-12--july-4-2023)
   
 
 ## Day 1 | June 13, 2023
@@ -213,3 +214,23 @@ addTask.addEventListener('click', ()=>{
 [HTML DOM on freeCodeCamp](https://youtu.be/5fb2aPlgoys)
 
 [To get more info & source code](./Day_10/)
+
+> I have been distracted learning Python and financially unstable to continue my study on JS for a week
+
+## Day 12 | July 4, 2023
+- Practice on Function Examples
+  
+```javascript
+function countChar(word, char){
+    let count = i = 0;
+    for (; i < word.length; i++)
+        if (word[i] === char) count++;
+    return count;
+}
+
+function countBs(word){
+    return countChar(word, 'B');
+}
+```
+
+> Always set your priority each day and try to stick with it
