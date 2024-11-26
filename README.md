@@ -19,6 +19,8 @@
   - [Day 11 | June 23, 2023](#day-11--june-23-2023)
     - [Links](#links-3)
   - [Day 12 | July 4, 2023](#day-12--july-4-2023)
+  - [Day 13 | June 5, 2023](#day-13--june-5-2023)
+    - [Today's Progress :](#todays-progress-)
   
 
 ## Day 1 | June 13, 2023
@@ -233,4 +235,21 @@ function countBs(word){
 }
 ```
 
-> Always set your priority each day and try to stick with it
+> Quote of the Day : **_Always set your priority each day and try to stick with it_** 
+
+## Day 13 | June 5, 2023
+
+### Today's Progress :
+- Reading on Data Structure in Eloquent JavaScript
+- Leant the two ways to access a property: Dot and Square Bracket Notation
+
+```javascript
+ console['log']('Hello World!') 
+ ``` 
+is equivalent to  
+```javascript
+ console.log('Hello World!') 
+```
+&nbsp;
+
+> Quote of the Day : **_Daily improvement is important no matter how small it is. No such thing as little effort_** 
